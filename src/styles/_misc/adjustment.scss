@@ -1,0 +1,95 @@
+@import 'mixins';
+
+
+@import 'global-fonts';
+
+
+
+$color-white: #ffffff;
+$black: #333333;
+$gray: #F5F5F5;
+$brand: #279FB9;
+
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}
+
+
+@function size-w($size, $vw) {
+  @return (100 / ($vw / $size)) * 1vw;
+}
+
+
+
+
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $black;
+  text-rendering: auto;
+  line-height: normal;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  outline: none !important;
+}
+
+
+
+
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4{
+  margin: 0;
+  padding: 0;
+}
+
+
+ul, li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p{
+  margin: 0;
+}
+
+
+button, a, input{
+  outline: none;
+  &:focus, &:visited{
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+label{
+  margin: 0;
+}
+body{
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+}
+html{
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+}

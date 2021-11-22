@@ -1,0 +1,94 @@
+/* Стандартный transition для hover-анимаций */
+
+@mixin transition {
+  transition: $transition-base;
+}
+
+/* Миксин замены цвета placeholder у input.
+Нужно добавить в стилях элемента конструкцию вида @include placeholder(#000); */
+@mixin placeholder($color, $font) {
+
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $font;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    font-size: $font;
+
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $font;
+  }
+}
+
+
+@mixin width-flex($width){
+  width: $width;
+  min-width: $width;
+}
+
+@mixin background($url){
+  background-image:url('../img/' + $url);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin background-contain($url){
+  background-image:url('../img/' + $url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin background-cover($url){
+  background-image:url('../img/' + $url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin background-cover-top($url){
+  background-image:url('../img/' + $url);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin background-cover-right($url){
+  background-image:url('../img/' + $url);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+
+@mixin hover-link($color){
+  &:hover{
+    color: $color;
+  }
+}
+@mixin df{
+  display: flex;
+  align-items: center;
+}
+
+@mixin last-mb-0{
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+@mixin last-mr-0{
+  &:last-child{
+    margin-right: 0;
+  }
+}

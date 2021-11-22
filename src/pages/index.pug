@@ -1,0 +1,454 @@
+extends ../templates/template
+block content
+	main.content
+
+		include ../_components/header
+
+		.container
+			.main
+				.main-aside
+				.main-block
+					.main-search
+					h1.main-title Личный кабинет
+					ul.menu-tabs
+						li.menu-tabs__item
+							a(href='#').menu-tabs__link личные данные
+						li.menu-tabs__item
+							a(href='#').menu-tabs__link.active заказы
+						li.menu-tabs__item
+							a(href='#').menu-tabs__link бронь
+						li.menu-tabs__item
+							a(href='#').menu-tabs__link Уведомления
+						li.menu-tabs__item
+							a(href='#').menu-tabs__link скидка
+						li.menu-tabs__item
+							a(href='#').menu-tabs__link любимый производитель
+						li.menu-tabs__item
+							a(href='#').menu-tabs__link бонусы
+						li.menu-tabs__item
+							a(href='#').menu-tabs__link промокод
+					h2.tabs-title Мои заказы
+					.order-quan
+						.order-quan__num 10
+						.order-quan__text заказов
+					.sort-block
+						.sort-block__title Сортировка
+						select.select-custom
+							option(selected) Все заказы
+							option() Только активные заказы
+							option() Только доставленные заказы
+							option() Только отмененные заказы
+					.orders-block
+						ul.orders-block__title
+							li.orders-block__item Номер
+							li.orders-block__item
+								span Дата
+								img(src='img/icon-sort-up.svg').icon-arrow
+							li.orders-block__item Сумма
+							li.orders-block__item Статус
+						ul.list-unstyled
+							li.order
+								.dropdown-toggle__wrap
+									a.dropdown-toggle(href='#sm1' data-toggle='collapse' aria-expanded='false')
+										.order-number №842929
+										.order-date 18 мая 2020
+										.order-sum 7 027 ₽
+										.order-status
+											.order-status__color.yellow
+											.order-status__text Ждёт оформления
+										.order-line
+										img(src='img/arrow.svg').order-arrow
+
+								div.collapse(id='sm1')
+									.order-info
+										.order-info-header
+											.order-info-header__num 3 товара в заказе:
+											a(href='#').order-info-header__edit Редактировать
+										.order-info-main
+											.order-info-item
+												.order-info-item__name Сборная модель автомобиль McLaren 570S (2 шт.)
+												.order-info-item__line
+												.order-info-item__cost 4 998 ₽
+											.order-info-item
+												.order-info-item__name Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)
+												.order-info-item__line
+												.order-info-item__cost 2 499 ₽
+										.order-extra
+											.order-extra-item
+												.order-extra-item__sale Скидки по распродаже
+												.order-extra-item__line
+												.order-extra-item__cost −450 ₽
+											.order-extra-item
+												.order-extra-item__promo Скидка по промокоду
+												.order-extra-item__line
+												.order-extra-item__cost −200 ₽
+											.order-extra-item
+												.order-extra-item__delivery Доставка
+												.order-extra-item__line
+												.order-extra-item__cost 180 ₽
+										.order-footer
+											.order-footer-btn
+												a(href='#').order-footer-btn__manage Написать менеджеру
+												a(href='#').order-footer-btn__extra Подробнее о заказе
+											.order-footer__cost 7 027 ₽
+
+							li.order
+								.dropdown-toggle__wrap
+									a.dropdown-toggle(href='#sm2' data-toggle='collapse' aria-expanded='false')
+										.order-number №842929
+										.order-date 18 мая 2020
+										.order-sum 7 027 ₽
+										.order-status
+											.order-status__color.gray-stat
+											.order-status__text Доставлен
+										.order-line
+										img(src='img/arrow.svg').order-arrow
+
+								div.collapse(id='sm2')
+									.order-info
+										.order-info-header
+											.order-info-header__num 3 товара в заказе:
+											a(href='#').order-info-header__edit Редактировать
+										.order-info-main
+											.order-info-item
+												.order-info-item__name Сборная модель автомобиль McLaren 570S (2 шт.)
+												.order-info-item__line
+												.order-info-item__cost 4 998 ₽
+											.order-info-item
+												.order-info-item__name Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)
+												.order-info-item__line
+												.order-info-item__cost 2 499 ₽
+										.order-extra
+											.order-extra-item
+												.order-extra-item__sale Скидки по распродаже
+												.order-extra-item__line
+												.order-extra-item__cost −450 ₽
+											.order-extra-item
+												.order-extra-item__promo Скидка по промокоду
+												.order-extra-item__line
+												.order-extra-item__cost −200 ₽
+											.order-extra-item
+												.order-extra-item__delivery Доставка
+												.order-extra-item__line
+												.order-extra-item__cost 180 ₽
+										.order-footer
+											.order-footer-btn
+												a(href='#').order-footer-btn__manage Написать менеджеру
+												a(href='#').order-footer-btn__extra Подробнее о заказе
+											.order-footer__cost 7 027 ₽
+							li.order
+								.dropdown-toggle__wrap
+									a.dropdown-toggle(href='#sm3' data-toggle='collapse' aria-expanded='false')
+										.order-number №842929
+										.order-date 18 мая 2020
+										.order-sum 7 027 ₽
+										.order-status
+											.order-status__color.red
+											.order-status__text Отменён
+										.order-line
+										img(src='img/arrow.svg').order-arrow
+
+								div.collapse(id='sm3')
+									.order-info
+										.order-info-header
+											.order-info-header__num 3 товара в заказе:
+											a(href='#').order-info-header__edit Редактировать
+										.order-info-main
+											.order-info-item
+												.order-info-item__name Сборная модель автомобиль McLaren 570S (2 шт.)
+												.order-info-item__line
+												.order-info-item__cost 4 998 ₽
+											.order-info-item
+												.order-info-item__name Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)
+												.order-info-item__line
+												.order-info-item__cost 2 499 ₽
+										.order-extra
+											.order-extra-item
+												.order-extra-item__sale Скидки по распродаже
+												.order-extra-item__line
+												.order-extra-item__cost −450 ₽
+											.order-extra-item
+												.order-extra-item__promo Скидка по промокоду
+												.order-extra-item__line
+												.order-extra-item__cost −200 ₽
+											.order-extra-item
+												.order-extra-item__delivery Доставка
+												.order-extra-item__line
+												.order-extra-item__cost 180 ₽
+										.order-footer
+											.order-footer-btn
+												a(href='#').order-footer-btn__manage Написать менеджеру
+												a(href='#').order-footer-btn__extra Подробнее о заказе
+											.order-footer__cost 7 027 ₽
+							li.order
+								.dropdown-toggle__wrap
+									a.dropdown-toggle(href='#sm4' data-toggle='collapse' aria-expanded='false')
+										.order-number №842929
+										.order-date 18 мая 2020
+										.order-sum 7 027 ₽
+										.order-status
+											.order-status__color.orange
+											.order-status__text Ожидает оплаты
+										.order-line
+										img(src='img/arrow.svg').order-arrow
+
+								div.collapse(id='sm4')
+									.order-info
+										.order-info-header
+											.order-info-header__num 3 товара в заказе:
+											a(href='#').order-info-header__edit Редактировать
+										.order-info-main
+											.order-info-item
+												.order-info-item__name Сборная модель автомобиль McLaren 570S (2 шт.)
+												.order-info-item__line
+												.order-info-item__cost 4 998 ₽
+											.order-info-item
+												.order-info-item__name Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)
+												.order-info-item__line
+												.order-info-item__cost 2 499 ₽
+										.order-extra
+											.order-extra-item
+												.order-extra-item__sale Скидки по распродаже
+												.order-extra-item__line
+												.order-extra-item__cost −450 ₽
+											.order-extra-item
+												.order-extra-item__promo Скидка по промокоду
+												.order-extra-item__line
+												.order-extra-item__cost −200 ₽
+											.order-extra-item
+												.order-extra-item__delivery Доставка
+												.order-extra-item__line
+												.order-extra-item__cost 180 ₽
+										.order-footer
+											.order-footer-btn
+												a(href='#').order-footer-btn__manage Написать менеджеру
+												a(href='#').order-footer-btn__extra Подробнее о заказе
+											.order-footer__cost 7 027 ₽
+							li.order
+								.dropdown-toggle__wrap
+									a.dropdown-toggle(href='#sm5' data-toggle='collapse' aria-expanded='false')
+										.order-number №842929
+										.order-date 18 мая 2020
+										.order-sum 7 027 ₽
+										.order-status
+											.order-status__color.green
+											.order-status__text Оплата подтверждена
+										.order-line
+										img(src='img/arrow.svg').order-arrow
+
+								div.collapse(id='sm5')
+									.order-info
+										.order-info-header
+											.order-info-header__num 3 товара в заказе:
+											a(href='#').order-info-header__edit Редактировать
+										.order-info-main
+											.order-info-item
+												.order-info-item__name Сборная модель автомобиль McLaren 570S (2 шт.)
+												.order-info-item__line
+												.order-info-item__cost 4 998 ₽
+											.order-info-item
+												.order-info-item__name Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)
+												.order-info-item__line
+												.order-info-item__cost 2 499 ₽
+										.order-extra
+											.order-extra-item
+												.order-extra-item__sale Скидки по распродаже
+												.order-extra-item__line
+												.order-extra-item__cost −450 ₽
+											.order-extra-item
+												.order-extra-item__promo Скидка по промокоду
+												.order-extra-item__line
+												.order-extra-item__cost −200 ₽
+											.order-extra-item
+												.order-extra-item__delivery Доставка
+												.order-extra-item__line
+												.order-extra-item__cost 180 ₽
+										.order-footer
+											.order-footer-btn
+												a(href='#').order-footer-btn__manage Написать менеджеру
+												a(href='#').order-footer-btn__extra Подробнее о заказе
+											.order-footer__cost 7 027 ₽
+							li.order
+								.dropdown-toggle__wrap
+									a.dropdown-toggle(href='#sm6' data-toggle='collapse' aria-expanded='false')
+										.order-number №842929
+										.order-date 18 мая 2020
+										.order-sum 7 027 ₽
+										.order-status
+											.order-status__color.gray
+											.order-status__text Доставлен
+										.order-line
+										img(src='img/arrow.svg').order-arrow
+
+								div.collapse(id='sm6')
+									.order-info
+										.order-info-header
+											.order-info-header__num 3 товара в заказе:
+											a(href='#').order-info-header__edit Редактировать
+										.order-info-main
+											.order-info-item
+												.order-info-item__name Сборная модель автомобиль McLaren 570S (2 шт.)
+												.order-info-item__line
+												.order-info-item__cost 4 998 ₽
+											.order-info-item
+												.order-info-item__name Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)
+												.order-info-item__line
+												.order-info-item__cost 2 499 ₽
+										.order-extra
+											.order-extra-item
+												.order-extra-item__sale Скидки по распродаже
+												.order-extra-item__line
+												.order-extra-item__cost −450 ₽
+											.order-extra-item
+												.order-extra-item__promo Скидка по промокоду
+												.order-extra-item__line
+												.order-extra-item__cost −200 ₽
+											.order-extra-item
+												.order-extra-item__delivery Доставка
+												.order-extra-item__line
+												.order-extra-item__cost 180 ₽
+										.order-footer
+											.order-footer-btn
+												a(href='#').order-footer-btn__manage Написать менеджеру
+												a(href='#').order-footer-btn__extra Подробнее о заказе
+											.order-footer__cost 7 027 ₽
+							li.order
+								.dropdown-toggle__wrap
+									a.dropdown-toggle(href='#sm7' data-toggle='collapse' aria-expanded='false')
+										.order-number №842929
+										.order-date 18 мая 2020
+										.order-sum 7 027 ₽
+										.order-status
+											.order-status__color.blue
+											.order-status__text Упакован
+										.order-line
+										img(src='img/arrow.svg').order-arrow
+
+								div.collapse(id='sm7')
+									.order-info
+										.order-info-header
+											.order-info-header__num 3 товара в заказе:
+											a(href='#').order-info-header__edit Редактировать
+										.order-info-main
+											.order-info-item
+												.order-info-item__name Сборная модель автомобиль McLaren 570S (2 шт.)
+												.order-info-item__line
+												.order-info-item__cost 4 998 ₽
+											.order-info-item
+												.order-info-item__name Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)
+												.order-info-item__line
+												.order-info-item__cost 2 499 ₽
+										.order-extra
+											.order-extra-item
+												.order-extra-item__sale Скидки по распродаже
+												.order-extra-item__line
+												.order-extra-item__cost −450 ₽
+											.order-extra-item
+												.order-extra-item__promo Скидка по промокоду
+												.order-extra-item__line
+												.order-extra-item__cost −200 ₽
+											.order-extra-item
+												.order-extra-item__delivery Доставка
+												.order-extra-item__line
+												.order-extra-item__cost 180 ₽
+										.order-footer
+											.order-footer-btn
+												a(href='#').order-footer-btn__manage Написать менеджеру
+												a(href='#').order-footer-btn__extra Подробнее о заказе
+											.order-footer__cost 7 027 ₽
+							li.order
+								.dropdown-toggle__wrap
+									a.dropdown-toggle(href='#sm8' data-toggle='collapse' aria-expanded='false')
+										.order-number №842929
+										.order-date 18 мая 2020
+										.order-sum 7 027 ₽
+										.order-status
+											.order-status__color.brand
+											.order-status__text Оплачен
+										.order-line
+										img(src='img/arrow.svg').order-arrow
+
+								div.collapse(id='sm8')
+									.order-info
+										.order-info-header
+											.order-info-header__num 3 товара в заказе:
+											a(href='#').order-info-header__edit Редактировать
+										.order-info-main
+											.order-info-item
+												.order-info-item__name Сборная модель автомобиль McLaren 570S (2 шт.)
+												.order-info-item__line
+												.order-info-item__cost 4 998 ₽
+											.order-info-item
+												.order-info-item__name Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)
+												.order-info-item__line
+												.order-info-item__cost 2 499 ₽
+										.order-extra
+											.order-extra-item
+												.order-extra-item__sale Скидки по распродаже
+												.order-extra-item__line
+												.order-extra-item__cost −450 ₽
+											.order-extra-item
+												.order-extra-item__promo Скидка по промокоду
+												.order-extra-item__line
+												.order-extra-item__cost −200 ₽
+											.order-extra-item
+												.order-extra-item__delivery Доставка
+												.order-extra-item__line
+												.order-extra-item__cost 180 ₽
+										.order-footer
+											.order-footer-btn
+												a(href='#').order-footer-btn__manage Написать менеджеру
+												a(href='#').order-footer-btn__extra Подробнее о заказе
+											.order-footer__cost 7 027 ₽
+							li.order
+								.dropdown-toggle__wrap
+									a.dropdown-toggle(href='#sm9' data-toggle='collapse' aria-expanded='false')
+										.order-number №842929
+										.order-date 18 мая 2020
+										.order-sum 7 027 ₽
+										.order-status
+											.order-status__color.purple
+											.order-status__text Ждёт получателя
+										.order-line
+										img(src='img/arrow.svg').order-arrow
+
+								div.collapse(id='sm9')
+									.order-info
+										.order-info-header
+											.order-info-header__num 3 товара в заказе:
+											a(href='#').order-info-header__edit Редактировать
+										.order-info-main
+											.order-info-item
+												.order-info-item__name Сборная модель автомобиль McLaren 570S (2 шт.)
+												.order-info-item__line
+												.order-info-item__cost 4 998 ₽
+											.order-info-item
+												.order-info-item__name Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)
+												.order-info-item__line
+												.order-info-item__cost 2 499 ₽
+										.order-extra
+											.order-extra-item
+												.order-extra-item__sale Скидки по распродаже
+												.order-extra-item__line
+												.order-extra-item__cost −450 ₽
+											.order-extra-item
+												.order-extra-item__promo Скидка по промокоду
+												.order-extra-item__line
+												.order-extra-item__cost −200 ₽
+											.order-extra-item
+												.order-extra-item__delivery Доставка
+												.order-extra-item__line
+												.order-extra-item__cost 180 ₽
+										.order-footer
+											.order-footer-btn
+												a(href='#').order-footer-btn__manage Написать менеджеру
+												a(href='#').order-footer-btn__extra Подробнее о заказе
+											.order-footer__cost 7 027 ₽
+					.pagination
+						.pagination-block
+							a(href='#').pagination-num.active 1
+							a(href='#').pagination-num 2
+							a(href='#').pagination-num 3
+							a(href='#').pagination-num ...
+							a(href='#').pagination-text дальше
+						button(type='submit').pagination-btn загрузить еще

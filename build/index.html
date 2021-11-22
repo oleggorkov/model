@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Model</title>
+    <link rel="stylesheet" href="css/plugins/bootstrap.css">
+    <link rel="stylesheet" href="css/plugins/anitabs.css">
+    <link rel="stylesheet" href="css/plugins/animate.min.css">
+    <link rel="stylesheet" href="css/plugins/slick.css">
+    <link rel="stylesheet" href="css/plugins/slick-theme.css">
+    <link rel="stylesheet" href="css/plugins/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/plugins/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/plugins/ion.rangeSlider.min.css">
+    <script src="js/plugins/wow.min.js"></script>
+    <script src="js/animate.js"></script>
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="content">
+        <header class="header-wrap">
+          <div class="header"></div>
+        </header>
+        <div class="container">
+          <div class="main">
+            <div class="main-aside"></div>
+            <div class="main-block">
+              <div class="main-search"></div>
+              <h1 class="main-title">Личный кабинет</h1>
+              <ul class="menu-tabs">
+                <li class="menu-tabs__item"><a class="menu-tabs__link" href="#">личные данные</a></li>
+                <li class="menu-tabs__item"><a class="menu-tabs__link active" href="#">заказы</a></li>
+                <li class="menu-tabs__item"><a class="menu-tabs__link" href="#">бронь</a></li>
+                <li class="menu-tabs__item"><a class="menu-tabs__link" href="#">Уведомления</a></li>
+                <li class="menu-tabs__item"><a class="menu-tabs__link" href="#">скидка</a></li>
+                <li class="menu-tabs__item"><a class="menu-tabs__link" href="#">любимый производитель</a></li>
+                <li class="menu-tabs__item"><a class="menu-tabs__link" href="#">бонусы</a></li>
+                <li class="menu-tabs__item"><a class="menu-tabs__link" href="#">промокод</a></li>
+              </ul>
+              <h2 class="tabs-title">Мои заказы</h2>
+              <div class="order-quan">
+                <div class="order-quan__num">10</div>
+                <div class="order-quan__text">заказов</div>
+              </div>
+              <div class="sort-block">
+                <div class="sort-block__title">Сортировка</div>
+                <select class="select-custom">
+                  <option selected>Все заказы</option>
+                  <option>Только активные заказы</option>
+                  <option>Только доставленные заказы</option>
+                  <option>Только отмененные заказы</option>
+                </select>
+              </div>
+              <div class="orders-block">
+                <ul class="orders-block__title">
+                  <li class="orders-block__item">Номер</li>
+                  <li class="orders-block__item"><span>Дата</span><img class="icon-arrow" src="img/icon-sort-up.svg"></li>
+                  <li class="orders-block__item">Сумма</li>
+                  <li class="orders-block__item">Статус</li>
+                </ul>
+                <ul class="list-unstyled">
+                  <li class="order">
+                    <div class="dropdown-toggle__wrap"><a class="dropdown-toggle" href="#sm1" data-toggle="collapse" aria-expanded="false">
+                        <div class="order-number">№842929</div>
+                        <div class="order-date">18 мая 2020</div>
+                        <div class="order-sum">7 027 ₽</div>
+                        <div class="order-status">
+                          <div class="order-status__color yellow"></div>
+                          <div class="order-status__text">Ждёт оформления</div>
+                        </div>
+                        <div class="order-line"></div><img class="order-arrow" src="img/arrow.svg"></a></div>
+                    <div class="collapse" id="sm1">
+                      <div class="order-info">
+                        <div class="order-info-header">
+                          <div class="order-info-header__num">3 товара в заказе:</div><a class="order-info-header__edit" href="#">Редактировать</a>
+                        </div>
+                        <div class="order-info-main">
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель автомобиль McLaren 570S (2 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">4 998 ₽</div>
+                          </div>
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">2 499 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-extra">
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__sale">Скидки по распродаже</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−450 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__promo">Скидка по промокоду</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−200 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__delivery">Доставка</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">180 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-footer">
+                          <div class="order-footer-btn"><a class="order-footer-btn__manage" href="#">Написать менеджеру</a><a class="order-footer-btn__extra" href="#">Подробнее о заказе</a></div>
+                          <div class="order-footer__cost">7 027 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order">
+                    <div class="dropdown-toggle__wrap"><a class="dropdown-toggle" href="#sm2" data-toggle="collapse" aria-expanded="false">
+                        <div class="order-number">№842929</div>
+                        <div class="order-date">18 мая 2020</div>
+                        <div class="order-sum">7 027 ₽</div>
+                        <div class="order-status">
+                          <div class="order-status__color gray-stat"></div>
+                          <div class="order-status__text">Доставлен</div>
+                        </div>
+                        <div class="order-line"></div><img class="order-arrow" src="img/arrow.svg"></a></div>
+                    <div class="collapse" id="sm2">
+                      <div class="order-info">
+                        <div class="order-info-header">
+                          <div class="order-info-header__num">3 товара в заказе:</div><a class="order-info-header__edit" href="#">Редактировать</a>
+                        </div>
+                        <div class="order-info-main">
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель автомобиль McLaren 570S (2 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">4 998 ₽</div>
+                          </div>
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">2 499 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-extra">
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__sale">Скидки по распродаже</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−450 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__promo">Скидка по промокоду</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−200 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__delivery">Доставка</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">180 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-footer">
+                          <div class="order-footer-btn"><a class="order-footer-btn__manage" href="#">Написать менеджеру</a><a class="order-footer-btn__extra" href="#">Подробнее о заказе</a></div>
+                          <div class="order-footer__cost">7 027 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order">
+                    <div class="dropdown-toggle__wrap"><a class="dropdown-toggle" href="#sm3" data-toggle="collapse" aria-expanded="false">
+                        <div class="order-number">№842929</div>
+                        <div class="order-date">18 мая 2020</div>
+                        <div class="order-sum">7 027 ₽</div>
+                        <div class="order-status">
+                          <div class="order-status__color red"></div>
+                          <div class="order-status__text">Отменён</div>
+                        </div>
+                        <div class="order-line"></div><img class="order-arrow" src="img/arrow.svg"></a></div>
+                    <div class="collapse" id="sm3">
+                      <div class="order-info">
+                        <div class="order-info-header">
+                          <div class="order-info-header__num">3 товара в заказе:</div><a class="order-info-header__edit" href="#">Редактировать</a>
+                        </div>
+                        <div class="order-info-main">
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель автомобиль McLaren 570S (2 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">4 998 ₽</div>
+                          </div>
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">2 499 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-extra">
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__sale">Скидки по распродаже</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−450 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__promo">Скидка по промокоду</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−200 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__delivery">Доставка</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">180 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-footer">
+                          <div class="order-footer-btn"><a class="order-footer-btn__manage" href="#">Написать менеджеру</a><a class="order-footer-btn__extra" href="#">Подробнее о заказе</a></div>
+                          <div class="order-footer__cost">7 027 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order">
+                    <div class="dropdown-toggle__wrap"><a class="dropdown-toggle" href="#sm4" data-toggle="collapse" aria-expanded="false">
+                        <div class="order-number">№842929</div>
+                        <div class="order-date">18 мая 2020</div>
+                        <div class="order-sum">7 027 ₽</div>
+                        <div class="order-status">
+                          <div class="order-status__color orange"></div>
+                          <div class="order-status__text">Ожидает оплаты</div>
+                        </div>
+                        <div class="order-line"></div><img class="order-arrow" src="img/arrow.svg"></a></div>
+                    <div class="collapse" id="sm4">
+                      <div class="order-info">
+                        <div class="order-info-header">
+                          <div class="order-info-header__num">3 товара в заказе:</div><a class="order-info-header__edit" href="#">Редактировать</a>
+                        </div>
+                        <div class="order-info-main">
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель автомобиль McLaren 570S (2 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">4 998 ₽</div>
+                          </div>
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">2 499 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-extra">
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__sale">Скидки по распродаже</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−450 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__promo">Скидка по промокоду</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−200 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__delivery">Доставка</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">180 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-footer">
+                          <div class="order-footer-btn"><a class="order-footer-btn__manage" href="#">Написать менеджеру</a><a class="order-footer-btn__extra" href="#">Подробнее о заказе</a></div>
+                          <div class="order-footer__cost">7 027 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order">
+                    <div class="dropdown-toggle__wrap"><a class="dropdown-toggle" href="#sm5" data-toggle="collapse" aria-expanded="false">
+                        <div class="order-number">№842929</div>
+                        <div class="order-date">18 мая 2020</div>
+                        <div class="order-sum">7 027 ₽</div>
+                        <div class="order-status">
+                          <div class="order-status__color green"></div>
+                          <div class="order-status__text">Оплата подтверждена</div>
+                        </div>
+                        <div class="order-line"></div><img class="order-arrow" src="img/arrow.svg"></a></div>
+                    <div class="collapse" id="sm5">
+                      <div class="order-info">
+                        <div class="order-info-header">
+                          <div class="order-info-header__num">3 товара в заказе:</div><a class="order-info-header__edit" href="#">Редактировать</a>
+                        </div>
+                        <div class="order-info-main">
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель автомобиль McLaren 570S (2 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">4 998 ₽</div>
+                          </div>
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">2 499 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-extra">
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__sale">Скидки по распродаже</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−450 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__promo">Скидка по промокоду</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−200 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__delivery">Доставка</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">180 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-footer">
+                          <div class="order-footer-btn"><a class="order-footer-btn__manage" href="#">Написать менеджеру</a><a class="order-footer-btn__extra" href="#">Подробнее о заказе</a></div>
+                          <div class="order-footer__cost">7 027 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order">
+                    <div class="dropdown-toggle__wrap"><a class="dropdown-toggle" href="#sm6" data-toggle="collapse" aria-expanded="false">
+                        <div class="order-number">№842929</div>
+                        <div class="order-date">18 мая 2020</div>
+                        <div class="order-sum">7 027 ₽</div>
+                        <div class="order-status">
+                          <div class="order-status__color gray"></div>
+                          <div class="order-status__text">Доставлен</div>
+                        </div>
+                        <div class="order-line"></div><img class="order-arrow" src="img/arrow.svg"></a></div>
+                    <div class="collapse" id="sm6">
+                      <div class="order-info">
+                        <div class="order-info-header">
+                          <div class="order-info-header__num">3 товара в заказе:</div><a class="order-info-header__edit" href="#">Редактировать</a>
+                        </div>
+                        <div class="order-info-main">
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель автомобиль McLaren 570S (2 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">4 998 ₽</div>
+                          </div>
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">2 499 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-extra">
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__sale">Скидки по распродаже</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−450 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__promo">Скидка по промокоду</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−200 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__delivery">Доставка</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">180 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-footer">
+                          <div class="order-footer-btn"><a class="order-footer-btn__manage" href="#">Написать менеджеру</a><a class="order-footer-btn__extra" href="#">Подробнее о заказе</a></div>
+                          <div class="order-footer__cost">7 027 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order">
+                    <div class="dropdown-toggle__wrap"><a class="dropdown-toggle" href="#sm7" data-toggle="collapse" aria-expanded="false">
+                        <div class="order-number">№842929</div>
+                        <div class="order-date">18 мая 2020</div>
+                        <div class="order-sum">7 027 ₽</div>
+                        <div class="order-status">
+                          <div class="order-status__color blue"></div>
+                          <div class="order-status__text">Упакован</div>
+                        </div>
+                        <div class="order-line"></div><img class="order-arrow" src="img/arrow.svg"></a></div>
+                    <div class="collapse" id="sm7">
+                      <div class="order-info">
+                        <div class="order-info-header">
+                          <div class="order-info-header__num">3 товара в заказе:</div><a class="order-info-header__edit" href="#">Редактировать</a>
+                        </div>
+                        <div class="order-info-main">
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель автомобиль McLaren 570S (2 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">4 998 ₽</div>
+                          </div>
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">2 499 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-extra">
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__sale">Скидки по распродаже</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−450 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__promo">Скидка по промокоду</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−200 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__delivery">Доставка</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">180 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-footer">
+                          <div class="order-footer-btn"><a class="order-footer-btn__manage" href="#">Написать менеджеру</a><a class="order-footer-btn__extra" href="#">Подробнее о заказе</a></div>
+                          <div class="order-footer__cost">7 027 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order">
+                    <div class="dropdown-toggle__wrap"><a class="dropdown-toggle" href="#sm8" data-toggle="collapse" aria-expanded="false">
+                        <div class="order-number">№842929</div>
+                        <div class="order-date">18 мая 2020</div>
+                        <div class="order-sum">7 027 ₽</div>
+                        <div class="order-status">
+                          <div class="order-status__color brand"></div>
+                          <div class="order-status__text">Оплачен</div>
+                        </div>
+                        <div class="order-line"></div><img class="order-arrow" src="img/arrow.svg"></a></div>
+                    <div class="collapse" id="sm8">
+                      <div class="order-info">
+                        <div class="order-info-header">
+                          <div class="order-info-header__num">3 товара в заказе:</div><a class="order-info-header__edit" href="#">Редактировать</a>
+                        </div>
+                        <div class="order-info-main">
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель автомобиль McLaren 570S (2 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">4 998 ₽</div>
+                          </div>
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">2 499 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-extra">
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__sale">Скидки по распродаже</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−450 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__promo">Скидка по промокоду</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−200 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__delivery">Доставка</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">180 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-footer">
+                          <div class="order-footer-btn"><a class="order-footer-btn__manage" href="#">Написать менеджеру</a><a class="order-footer-btn__extra" href="#">Подробнее о заказе</a></div>
+                          <div class="order-footer__cost">7 027 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="order">
+                    <div class="dropdown-toggle__wrap"><a class="dropdown-toggle" href="#sm9" data-toggle="collapse" aria-expanded="false">
+                        <div class="order-number">№842929</div>
+                        <div class="order-date">18 мая 2020</div>
+                        <div class="order-sum">7 027 ₽</div>
+                        <div class="order-status">
+                          <div class="order-status__color purple"></div>
+                          <div class="order-status__text">Ждёт получателя</div>
+                        </div>
+                        <div class="order-line"></div><img class="order-arrow" src="img/arrow.svg"></a></div>
+                    <div class="collapse" id="sm9">
+                      <div class="order-info">
+                        <div class="order-info-header">
+                          <div class="order-info-header__num">3 товара в заказе:</div><a class="order-info-header__edit" href="#">Редактировать</a>
+                        </div>
+                        <div class="order-info-main">
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель автомобиль McLaren 570S (2 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">4 998 ₽</div>
+                          </div>
+                          <div class="order-info-item">
+                            <div class="order-info-item__name">Сборная модель пасс. авиалайнер Boeing 737-800 (1 шт.)</div>
+                            <div class="order-info-item__line"></div>
+                            <div class="order-info-item__cost">2 499 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-extra">
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__sale">Скидки по распродаже</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−450 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__promo">Скидка по промокоду</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">−200 ₽</div>
+                          </div>
+                          <div class="order-extra-item">
+                            <div class="order-extra-item__delivery">Доставка</div>
+                            <div class="order-extra-item__line"></div>
+                            <div class="order-extra-item__cost">180 ₽</div>
+                          </div>
+                        </div>
+                        <div class="order-footer">
+                          <div class="order-footer-btn"><a class="order-footer-btn__manage" href="#">Написать менеджеру</a><a class="order-footer-btn__extra" href="#">Подробнее о заказе</a></div>
+                          <div class="order-footer__cost">7 027 ₽</div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pagination">
+                <div class="pagination-block"><a class="pagination-num active" href="#">1</a><a class="pagination-num" href="#">2</a><a class="pagination-num" href="#">3</a><a class="pagination-num" href="#">...</a><a class="pagination-text" href="#">дальше</a></div>
+                <button class="pagination-btn" type="submit">загрузить еще</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer__wrap"></footer>
+    </div>
+    <script src="js/plugins/jquery-3.4.1.min.js"></script>
+    <script src="js/plugins/bootstrap.js"></script>
+    <script src="js/plugins/bootstrap-select.min.js"></script>
+    <script src="js/plugins/anitabs.min.js"></script>
+    <script src="js/plugins/slick.js"></script>
+    <script src="js/plugins/jquery.formstyler.min.js"></script>
+    <script src="js/plugins/jquery.maskedinput.js"></script>
+    <script src="js/plugins/ion.rangeSlider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hideshowpassword/2.0.8/hideShowPassword.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
